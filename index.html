@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="balance-card">
+      <h2>Balance: ₹<span id="balance">0.00</span></h2>
+    </div>
+
+    <form id="transactionForm">
+      <input type="text" id="name" placeholder="Transaction Name" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <div class="radio-group">
+        <label><input type="radio" name="type" value="income" checked /> Income</label>
+        <label><input type="radio" name="type" value="expense" /> Expense</label>
+      </div>
+      <button type="submit">+ Add Transaction</button>
+      <p id="error" class="error"></p>
+    </form>
+
+    <ul id="transactionList" class="transaction-list">
+      
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
